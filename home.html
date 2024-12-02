@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-page">
+  <div class="hero-background">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">RITSY</a>
+      <!-- Toggle Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <div class="hero position-relative">
+    <img src="images/love-6600904_1280.jpg" alt="Hero Image" class="img-fluid w-100">
+    <div class="hero-content position-absolute top-50 start-0 translate-middle-y text-start text-white p-4">
+        <h1 class="display-4">NOSTALGIC,<br>LIVE IT AGAIN<br>MOMENTS</h1>
+        <a href="portfolio.html" class="btn custom-btn mt-4">PORTFOLIO</a>
+    </div>
+  </div>
+  </div>
+
+  <!-- Subscribe Section -->
+  <section class="subscribe-section py-5">
+    <div class="container text-center">
+      <h2 class="subscribe-title">Subscribe</h2>
+      <p class="subscribe-text">Sign up with your email address to receive news and exclusive prints.</p>
+      <form class="subscribe-form d-flex justify-content-center mt-4">
+        <input 
+          type="email" 
+          class="form-control me-2" 
+          placeholder="Email Address" 
+          aria-label="Enter your email"
+          required>
+        <button type="submit" class="btn custom-btn">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer text-center py-3">
+    <p>&copy; Ritsy 2024.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

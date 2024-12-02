@@ -1,0 +1,660 @@
+/************************************************************* Desktop Style *******************************************************************/
+body {
+  background-color: #D7CECA;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+/*navbar*/
+.navbar {
+  position: absolute; 
+  top: 0;
+  width: 100%;
+  z-index: 10; 
+  background: transparent; 
+}
+.navbar-collapse {
+  display: none; 
+}
+.navbar-collapse.show {
+  display: block; 
+}
+.navbar-toggler {
+  display: block; 
+}
+.custom-navbar .nav-link {
+  font-size: 1.5rem;
+  font-weight: 700; 
+  color: black !important; 
+  text-transform: uppercase; 
+}
+.custom-navbar .nav-link:hover {
+  color: #8B521A !important;
+}
+.custom-navbar {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  position: absolute; 
+  top: 0;
+  width: 100%; 
+  z-index: 10; 
+  padding: 10px 5%; 
+  background: transparent;
+}
+.navbar-brand {
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 1.5rem;
+  color: black; 
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0; 
+}
+.navbar-links {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 30px; 
+}
+.navbar-links .nav-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black; 
+  text-transform: uppercase;
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+.navbar-links .nav-link:hover {
+  color: white; 
+}
+.navbar-links .nav-link.active {
+  color: black;
+  text-decoration: underline; 
+  font-weight: bold;
+}
+.navbar-links .nav-link.active:hover {
+  color: white; 
+}
+.home-page .navbar .navbar-brand {
+  color: white !important; 
+}
+/* home page*/
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.hero-content {
+  position: absolute;
+  top: 50%; 
+  left: 10%; 
+  transform: translateY(-50%);
+  z-index: 5; 
+  color: white; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+.hero img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.hero-content h1 {
+    font-family: 'Abhaya Libre', serif; 
+    font-weight: 700; 
+    font-size: 6.5rem; 
+    line-height: 1.2; 
+    color: white; 
+    margin: 0; 
+}
+.hero-background {
+  position: relative;
+  background-image: url('images/love-6600904_1280.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+}
+.hero-line {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+    word-wrap: break-word;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.home-page .custom-btn {
+    background-color: #8B521A; 
+    color: white; 
+    padding: 20px 40px !important; 
+    font-size: 1rem; 
+    border-radius: 0px !important; 
+    border: none; 
+    transition: all 0.3s ease; 
+    white-space: nowrap; 
+}
+.home-page .custom-btn:hover {
+    background-color: black; 
+    color: #8B521A; 
+    text-decoration: none; 
+}
+.subscribe-section {
+    background-color: #D7CECA; 
+    padding: 50px 0; 
+    text-align: center; 
+}
+.subscribe-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    color: #333; 
+}
+.subscribe-text {
+    font-family: 'Inter', sans-serif; 
+    font-size: 1.2rem; 
+    color: #666; 
+}
+.subscribe-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.subscribe-form .form-control {
+    border: 1px solid #8B521A; 
+    font-family: 'Inter', sans-serif; 
+    border-radius: 0px;
+    padding: 10px;
+    flex-grow: 1;
+}
+.subscribe-form .custom-btn {
+    background-color: #8B521A; 
+    color: white; 
+    padding: 10px 20px; 
+    border-radius: 2px; 
+    border: none;
+    font-family: 'Inter', sans-serif; 
+    white-space: nowrap; 
+    display: inline-block; 
+    transition: all 0.3s ease; 
+}
+.subscribe-form .custom-btn:hover {
+    background-color: black; 
+    color: #8B521A; 
+}
+/* about page*/
+.about-page .about {
+  padding-top: 100px !important; 
+}
+.social-icons img {
+    filter: grayscale(1); 
+    transition: filter 0.3s ease;
+}
+.social-icons img:hover {
+    filter: grayscale(0); 
+}
+.elfsight-app-5f53f1e9-8dea-4aba-8e1d-97bf38ca4d4d {
+    margin-top: 20px;
+    text-align: left; 
+}
+.email {
+    text-align: center;
+}
+.email-link {
+    font-family: 'Inter', sans-serif; 
+    font-size: 1rem; 
+    font-weight: 600; 
+    color: #333;
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+.email-link:hover {
+    color: #8B521A; 
+    text-decoration: underline; 
+}
+.image-frame {
+    border: 10px solid #5A3B1A; 
+
+}
+.image-frame img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* contact page*/
+.contact-title {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+}
+.contact-page  {
+  padding-top: 100px !important; 
+}
+.contact .row {
+  margin-top: 30px !important;
+}
+.contact-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+.contact-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+.contact-link:hover {
+  color: #8B521A;
+  text-decoration: underline;
+}
+.contact-form label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: black;
+}
+.contact-form .form-control {
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.contact-page .custom-btn {
+  background-color: #8B521A !important; 
+    color: white !important;
+  padding: 10px 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  border: none !important;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.custom-btn:hover {
+  background-color: black !important;
+  color: #8B521A !important;
+}
+/* portfolio page*/
+.portfolio-title {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 30px;
+}
+.portfolio img {
+  max-width: 85%; 
+  height: auto; 
+  padding: 5px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 0 auto; 
+  display: block; 
+}
+.custom-btn {
+  background-color: transparent;
+  color: black;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.custom-btn:hover {
+  background-color: black;
+  color: #8B521A;
+}
+.about-page .main-content,
+.portfolio-page .main-content {
+  padding-top: 10px; 
+}
+/* wedding page*/
+body.weddings-page {
+  padding-top: 100px;
+}
+.weddings-title {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+}
+.weddings-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 15px;
+}
+.weddings-highlight {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: black;
+  margin: 20px 0;
+}
+.weddings img {
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* portrait page*/
+.portraits-title {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+}
+.portraits-page {
+  padding-top: 100px; 
+} 
+.portraits-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 40px;
+}
+.portraits img {
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+/* elopement page*/
+.elopements-title {
+  font-family: 'Abhaya Libre', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 20px;
+}
+.elopements-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 20px;
+}
+body.elopements-page {
+  padding-top: 100px; 
+}
+.elopements img {
+  border: none; 
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/***************************************************************** TABLET STYLE *****************************************************************/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+/*all pages navbar*/
+.navbar-nav {
+  display: flex; 
+  gap: 20px; 
+  flex-direction: row; 
+  gap: 30px; 
+}
+/* home page*/
+.hero-content {
+  right: 5% !important; 
+  transform: translateY(-50%); 
+  text-align: right !important; 
+}
+.hero-content h1 {
+  font-size: 4.5rem; 
+}
+/* contact page*/
+.contact-page .custom-navbar {
+  padding: 15px 0;
+}
+.contact-page .navbar-links {
+  justify-content: center; 
+}
+.contact-page .navbar-links .nav-link {
+  font-size: 0.9rem; 
+  margin-right: 15px; 
+}
+/* portfolio page*/
+.portfolio .row {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 20px; 
+}
+.portfolio .col-md-4 {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio .col-md-4 img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  margin-bottom: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.portfolio-title {
+  display: none; 
+}
+/* wedding page*/
+.weddings .row {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px; 
+  justify-items: center; 
+}
+.weddings .row img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.weddings .row .col-md-4 {
+  width: 100%; 
+}
+/*portrait page*/
+ .portraits .row {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px; 
+  justify-items: center; 
+}
+.portraits .row img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.portraits .row .col-md-4 {
+  width: 100%; 
+}
+/*elopement page*/
+.elopements .row {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 30px; 
+  justify-items: center; 
+}
+.elopements .row img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border: none;
+}
+.elopements .row .col-md-4 {
+  width: 100%;
+}
+}
+/**************************************************************** phone size *******************************************************************/
+@media (max-width: 767px) {
+/*all pages navbar*/
+.navbar {
+  background-color: #D7CECA; 
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+.navbar-toggler {
+  background-color: #8B521A; 
+  border: none; 
+  padding: 8px 12px; 
+  border-radius: 4px; 
+  color: white; 
+ }
+.navbar-collapse {
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+  padding: 10px 20px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  display: none;
+}
+.navbar-collapse.show {
+  display: block !important; 
+}
+.nav-link {
+  font-family: 'Inter', sans-serif; 
+  font-size: 1rem; 
+  font-weight: bold; 
+  color: #333; 
+  padding: 10px; 
+  border-radius: 5px; 
+  text-align: center; 
+  text-decoration: none; 
+  transition: all 0.3s ease; 
+}
+.nav-link:hover {
+  background-color: #8B521A; 
+  color: black; 
+}
+.navbar-brand {
+  font-family: 'Inknut Antiqua', serif; 
+  font-size: 1.5rem; 
+  color: black; 
+  text-transform: uppercase; 
+  text-align: center; 
+}
+.navbar-nav {
+  flex-direction: column; 
+  gap: 10px; 
+  align-items: center; 
+}
+/* home page*/
+.display-4 {
+  display: none; 
+}
+.hero-content .custom-btn {
+  width: auto; 
+  height: auto; 
+  border-radius: 50% !important; 
+  position: relative;
+  top: 50%;
+  left: 70%;
+  font-size: 1.5rem; 
+  padding: 10px; 
+  background-color: #333300;
+  color: white; 
+  border: none; 
+  text-decoration: none; 
+  text-align: center; 
+  box-shadow: 20px 20px 20px black; 
+  transition: all 0.3s ease; 
+}
+.hero-content .custom-btn:hover {
+  background-color: white !important;
+  color: #333300 !important;
+}
+.portfolio-btn {
+  display: none;
+}
+.portfolio-link {
+  display: inline-block;
+}
+/* about page*/
+.about-page .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  padding: 20px; 
+}
+.about-page .about-title {
+  font-size: 1.5rem; 
+  margin-bottom: 15px; 
+}
+.about-page .about-text {
+  font-size: 1rem; 
+  line-height: 1.6; 
+}
+
+.about-page .email {
+  margin-top: 20px; 
+}
+/* contact page*/
+.contact-page .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  padding: 20px; 
+}
+.contact-page .contact-text {
+  margin-bottom: 20px; 
+}
+.contact-page .contact-link {
+  display: inline-block; 
+  margin: 10px 0; 
+}
+/* portfolio page*/
+  .portfolio-title {
+    display: none; 
+  }
+}
+/************************************************************ toggler style for bigger sizes ***************************************************/
+@media (min-width: 768px) {
+.navbar-toggler {
+  display: none; 
+}
+.navbar-collapse {
+  display: flex !important; 
+}
+.navbar .nav-link {
+  font-size: 1rem; 
+  font-weight: 700; 
+  color: black;
+  text-transform: uppercase; 
+  text-decoration: none; 
+  transition: color 0.3s ease; 
+}
+.navbar .nav-link:hover {
+  color: #8B521A; 
+}
+}
+/*************************************************************** ALL PAGES FOOTER **************************************************************/
+.site-footer {
+  background-color: #D7CECA; 
+  color: #333; 
+  text-align: center;
+  margin-top: auto; 
+  border-top: 1px solid #000000; 
+  padding: 15px 0; 
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem; 
+}
+  
+
+
